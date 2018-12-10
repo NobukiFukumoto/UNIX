@@ -1,6 +1,6 @@
 #!/bin/sh]
-#2�̈����Ƃ��ė^����ꂽ�f�B���N�g���̓����ɂ���f�B���N�g�����̍��v���o�͂���
-#wc=wordcount -l=�s���J�E���g
-str1= "ls -1 $1 �b wc -l"
-str2= "ls -1 $2 �b wc -l"
+#2つの引数として与えられたディレクトリの内部にあるディレクトリ数の合計を出力するシェルスクリプト
+#wc=wordcount -l=行数カウント
+str1= "ls -1 $1 ｜ wc -l"
+str2= "ls -1 $2 ｜ wc -l"
 echo ((str1 + str2))
